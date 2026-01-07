@@ -22,7 +22,9 @@ const ProjectCard = ({
         ))}
       </div>
       <h2 className="text-xl font-semibold mb-2 text-black">{projectName}</h2>
-      <p className="text-gray-600 text-sm line-clamp-4">{projectDescription}</p>
+      <p className="text-gray-600 text-sm line-clamp-4 min-h-[5rem]">
+        {projectDescription}
+      </p>
       <a
         href={projectLink}
         className="text-blue-500 mt-4 hover:cursor-pointer flex items-center gap-2"

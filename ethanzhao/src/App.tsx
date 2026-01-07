@@ -38,19 +38,19 @@ const App = () => {
         <div className="pt-4 py-2 px-4 -mx-4 flex flex-row space-x-4 overflow-x-auto">
           <ProjectCard
             projectName="ZotRide"
-            projectDescription="Test"
+            projectDescription="Student ridesharing platform made exclusively for UCI students."
             projectLanguages={["React", "Python"]}
             projectLink="https://github.com/IsaacPhoon/ZotRide"
           />
           <ProjectCard
             projectName="Halo"
-            projectDescription="Test"
+            projectDescription="AI-powered food allergy management application that helps users safely navigate restaurant menus."
             projectLanguages={["React", "Python"]}
             projectLink="https://github.com/klin2686/halo"
           />
           <ProjectCard
             projectName="Rsrv"
-            projectDescription="Test"
+            projectDescription="Modern, real-time court reservation management application built for badminton facilities."
             projectLanguages={["React", "NodeJS"]}
             projectLink="https://github.com/dolphinalt/rsrv"
           />
