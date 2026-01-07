@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+.highlight {
+  @apply bg-transparent underline decoration-blue-300 transition duration-300;
+}
+
+.highlight:hover {
+  @apply bg-blue-100;
+}
+
+.h1-blog {
+  @apply text-2xl font-bold mb-2;
+}
+
+.h2-blog {
+  @apply text-xl font-bold mb-2;
+}

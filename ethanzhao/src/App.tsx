@@ -22,16 +22,20 @@ const App = () => {
           <p className="mb-2">
             I'm a a First-Year Undergraduate at the University of California,
             Irvine who's curious about everything from full-stack software
-            engineering to cybersecurity to AI. I'm currently focusedd on creating
-            full stack web applications, such as AI allergy detection systems,
-            an exclusive ridesharing platform for UCI students, and a badminton
-            court reservation manager.
+            engineering to cybersecurity to AI. I'm currently focused on
+            creating full stack web applications, such as AI allergy detection
+            systems, an exclusive ridesharing platform for UCI students, and a
+            badminton court reservation manager.
           </p>
           <p>
-            I'm always learning new technologies and applying them to solve real-world
-            problems. In my free time, I enjoy playing badminton, skiing, or competing
-            in cybersecurity competitions/hackathons. Feel free to check out some of
-            my projects!
+            I'm always learning new technologies and applying them to solve
+            real-world problems. In my free time, I enjoy playing badminton,
+            skiing, and competing in cybersecurity competitions or hackathons. Feel
+            free to check out some of my projects, or check out my{" "}
+            <a href="/blogs" className="highlight transition duration-300">
+              blog
+            </a>
+            !
           </p>
         </div>
         <hr className="mt-4 border-t-2 border-gray-200"></hr>
@@ -43,16 +47,16 @@ const App = () => {
             projectLink="https://github.com/IsaacPhoon/ZotRide"
           />
           <ProjectCard
-            projectName="Halo"
-            projectDescription="AI-powered food allergy management application that helps users safely navigate restaurant menus."
-            projectLanguages={["React", "Python"]}
-            projectLink="https://github.com/klin2686/halo"
-          />
-          <ProjectCard
             projectName="Rsrv"
             projectDescription="Modern, real-time court reservation management application built for badminton facilities."
             projectLanguages={["React", "NodeJS"]}
             projectLink="https://github.com/dolphinalt/rsrv"
+          />
+          <ProjectCard
+            projectName="F1 Wheel"
+            projectDescription="A 3D printed Formula 1 style steering wheel with working buttons as a gaming peripheral."
+            projectLanguages={["Onshape", "Arduino"]}
+            projectLink="/blogs/f1-wheel"
           />
         </div>
         <div className="mt-8 text-xs sm:text-sm text-gray-500 flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4">

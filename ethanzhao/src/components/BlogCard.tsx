@@ -2,29 +2,22 @@
 import { Link } from "react-router-dom";
 import LanguageCard from "./LanguageCard";
 
-interface ProjectCardProps {
-  projectName: string;
-  projectDescription: string;
-  projectLanguages: string[];
-  projectLink: string;
-  isDark?: boolean;
+interface BlogCardProps {
+  title: string;
+  date: string;
+  tags: string[];
+  blogLink: string;
 }
 
-const ProjectCard = ({
-  projectName,
-  projectDescription,
-  projectLanguages,
-  projectLink,
-  isDark = false,
-}: ProjectCardProps) => {
-  const isInternalLink = projectLink.startsWith("/");
+const BlogCard = ({ title, date, tags, blogLink }: BlogCardProps) => {
+  const isInternalLink = blogLink.startsWith("/");
 
   const linkComponent = isInternalLink ? (
     <Link
-      to={projectLink}
+      to={blogLink}
       className="text-blue-500 mt-4 hover:cursor-pointer flex items-center gap-2"
     >
-      Learn More
+      Read
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
@@ -42,12 +35,12 @@ const ProjectCard = ({
     </Link>
   ) : (
     <a
-      href={projectLink}
+      href={blogLink}
       target="_blank"
       rel="noopener noreferrer"
       className="text-blue-500 mt-4 hover:cursor-pointer flex items-center gap-2"
     >
-      Learn More
+      Read
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
@@ -66,33 +59,17 @@ const ProjectCard = ({
   );
 
   return (
-    <div
-      className={`p-4 w-sm rounded-lg border shadow-md ${
-        isDark ? "bg-gray-800 border-gray-700" : "bg-white border-gray-200"
-      }`}
-    >
+    <div className="p-4 w-full rounded-lg border border-gray-200 bg-white shadow-md">
+      <h2 className="text-xl font-semibold mb-2 text-black">{title}</h2>
+      <p className="text-sm mb-2 text-gray-600">{date}</p>
       <div className="mb-2 flex flex-row space-x-2">
-        {projectLanguages.map((language) => (
-          <LanguageCard key={language} language={language} />
+        {tags.map((tag) => (
+          <LanguageCard key={tag} language={tag} />
         ))}
       </div>
-      <h2
-        className={`text-xl font-semibold mb-2 ${
-          isDark ? "text-white" : "text-black"
-        }`}
-      >
-        {projectName}
-      </h2>
-      <p
-        className={`text-sm line-clamp-4 min-h-[5rem] ${
-          isDark ? "text-gray-400" : "text-gray-600"
-        }`}
-      >
-        {projectDescription}
-      </p>
       {linkComponent}
     </div>
   );
 };
 
-export default ProjectCard;
+export default BlogCard;
