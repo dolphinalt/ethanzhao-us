@@ -28,10 +28,10 @@ const App = () => {
             court reservation manager.
           </p>
           <p>
-            I'm passionate about learning new technologies and applying them to
-            solve real-world problems. In my free time, I enjoy playing badminton,
-            skiing, or competing in cybersecurity competitions. Feel free to check
-            out some of my projects!
+            I'm always learning new technologies and applying them to solve real-world
+            problems. In my free time, I enjoy playing badminton, skiing, or competing
+            in cybersecurity competitions/hackathons. Feel free to check out some of
+            my projects!
           </p>
         </div>
         <hr className="mt-4 border-t-2 border-gray-200"></hr>
