@@ -9,6 +9,8 @@ const App = () => {
     console.log(`Current mode: ${isDarkMode ? "dark" : "light"}`);
   }, []);
   return (
+    <>
+    <title>Ethan Zhao</title>
     <div className="min-h-screen flex items-center justify-center bg-gray-100 px-4 py-8 md:py-0">
       <div className="max-w-2xl w-full md:m-8">
         <h1 className="text-3xl md:text-4xl">
@@ -80,6 +82,7 @@ const App = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
